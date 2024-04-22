@@ -1,38 +1,48 @@
-import { Container, Box, Button, Typography } from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
-import SaveIcon from "@mui/icons-material/Save";
+import { Container, Grid } from "@mui/material";
 export default function App() {
   return (
     <Container>
-      <Typography variant="h1" color="error">
-        App
-      </Typography>
-      <Box
-        sx={{
-          border: 2,
-          p: 5,
-          borderColor: "primary.main",
-          bgcolor: "#111",
-          color: "white",
-        }}
+      <Grid
+        container
+        spacing={2}
       >
-        MUI is beautiful
-      </Box>
-      <Button variant="contained" color="warning">
-        My button
-      </Button>
-      <Button variant="contained" color="success">
-        Second button
-      </Button>
-      <Button variant="outlined" color="error">
-        Outline button
-      </Button>
-      <Button variant="outlined" color="info" startIcon={<DeleteIcon />}>
-        DELETE
-      </Button>
-      <Button variant="contained" color="success" endIcon={<SaveIcon />}>
-        SAVE
-      </Button>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={4}
+          sx={{ px: 2 }}
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          soluta qui nemo repudiandae iure alias odio quos placeat nostrum?
+          Corporis eveniet totam, aperiam placeat maxime ipsum eligendi
+          repudiandae officia velit.
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={4}
+          sx={{ px: 2 }}
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          soluta qui nemo repudiandae iure alias odio quos placeat nostrum?
+          Corporis eveniet totam, aperiam placeat maxime ipsum eligendi
+          repudiandae officia velit.
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={4}
+          sx={{ px: 2 }}
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+          soluta qui nemo repudiandae iure alias odio quos placeat nostrum?
+          Corporis eveniet totam, aperiam placeat maxime ipsum eligendi
+          repudiandae officia velit.
+        </Grid>
+      </Grid>
     </Container>
   );
 }
