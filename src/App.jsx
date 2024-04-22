@@ -1,4 +1,4 @@
-import { Button, Container, Typography, Box } from "@mui/material";
+import { Container, Box } from "@mui/material";
 
 export default function App() {
   return (
