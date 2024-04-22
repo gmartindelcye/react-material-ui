@@ -1,9 +1,12 @@
-import { Container, Box } from "@mui/material";
-
+import { Container, Box, Button, Typography } from "@mui/material";
+import DeleteIcon from "@mui/icons-material/Delete";
+import SaveIcon from "@mui/icons-material/Save";
 export default function App() {
   return (
     <Container>
-      <h1>App</h1>
+      <Typography variant="h1" color="error">
+        App
+      </Typography>
       <Box
         sx={{
           border: 2,
@@ -15,6 +18,21 @@ export default function App() {
       >
         MUI is beautiful
       </Box>
+      <Button variant="contained" color="warning">
+        My button
+      </Button>
+      <Button variant="contained" color="success">
+        Second button
+      </Button>
+      <Button variant="outlined" color="error">
+        Outline button
+      </Button>
+      <Button variant="outlined" color="info" startIcon={<DeleteIcon />}>
+        DELETE
+      </Button>
+      <Button variant="contained" color="success" endIcon={<SaveIcon />}>
+        SAVE
+      </Button>
     </Container>
   );
 }
