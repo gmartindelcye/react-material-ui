@@ -68,6 +68,7 @@ title: "React/Vite Materual UI App"
    ```
 
 9. Clear content of `src/App.js` and change it to:
+
    ```js
    export default function App() {
      return (
@@ -77,3 +78,8 @@ title: "React/Vite Materual UI App"
      );
    }
    ```
+
+10. Run app
+    ```bash
+    npm run dev
+    ```
