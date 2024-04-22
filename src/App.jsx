@@ -1,9 +1,9 @@
 import { Container } from "@mui/material";
-import Product from "./components/Product";
+import MyCard from "./components/myCard";
 export default function App() {
   return (
-    <Container>
-      <Product />
+    <Container sx={{ mt: 4, mb: 4 }}>
+      <MyCard />
     </Container>
   );
 }
