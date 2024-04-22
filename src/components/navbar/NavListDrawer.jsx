@@ -12,7 +12,7 @@ import DraftsIcon from "@mui/icons-material/Drafts";
 
 export default function NavListDrawer() {
   return (
-    <Box sx={{ width: 250, bgcolor: "lightsalmon" }}>
+    <Box sx={{ width: 250 }}>
       <nav>
         <List>
           <ListItem>
