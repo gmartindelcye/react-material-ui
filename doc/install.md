@@ -1,5 +1,5 @@
 ---
-title: "React/Vite Materual UI App"
+title: "React/Vite Material UI App"
 ---
 
 # React/Vite Materual UI App
