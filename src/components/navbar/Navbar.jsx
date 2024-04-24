@@ -10,40 +10,12 @@ import {
 } from "@mui/material";
 import NavListDrawer from "./NavListDrawer";
 import MenuIcon from "@mui/icons-material/Menu";
-import HomeIcon from "@mui/icons-material/Home";
-import LoginIcon from "@mui/icons-material/Login";
-import LogoutIcon from "@mui/icons-material/Logout";
-import AppRegistrationIcon from "@mui/icons-material/AppRegistration";
 
-const navLinks = [
-  {
-    title: "Home",
-    path: "/",
-    active: true,
-    icon: <HomeIcon />,
-  },
-  {
-    title: "Login",
-    path: "/login",
-    active: true,
-    icon: <LoginIcon />,
-  },
-  {
-    title: "Logout",
-    path: "/logout",
-    active: false,
-    icon: <LogoutIcon />,
-  },
-  {
-    title: "Register",
-    path: "/register",
-    active: false,
-    icon: <AppRegistrationIcon />,
-  },
-];
-
-export default function Navbar() {
+export default function Navbar(navArrayLinks) {
   const [open, setOpen] = useState(false);
+  const navLinks = navArrayLinks.navArrayLinks;
+
+  console.log(navLinks);
 
   return (
     <>
