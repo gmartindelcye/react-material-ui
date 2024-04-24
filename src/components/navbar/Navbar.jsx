@@ -16,8 +16,6 @@ export default function Navbar(navArrayLinks) {
   const [open, setOpen] = useState(false);
   const navLinks = navArrayLinks.navArrayLinks;
 
-  console.log(navLinks);
-
   return (
     <>
       <AppBar position="static">
