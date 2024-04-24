@@ -11,6 +11,7 @@ import "./index.css";
 import { CssBaseline } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { BrowserRouter } from "react-router-dom";
+import { SnackbarProvider } from "notistack";
 
 const theme = createTheme({
   palette: {
@@ -28,8 +29,13 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <CssBaseline />
-        <App />
+        <SnackbarProvider
+          maxSnack={3}
+          autoHideDuration={3000}
+        >
+          <CssBaseline />
+          <App />
+        </SnackbarProvider>
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
