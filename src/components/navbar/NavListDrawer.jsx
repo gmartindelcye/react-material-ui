@@ -1,7 +1,7 @@
 import { Box, List } from "@mui/material";
 import DrawerListItem from "./DrawerListItem";
 
-export default function NavListDrawer(navLinks) {
+export default function NavListDrawer(navLinks, setOpen) {
   const links = navLinks.navLinks;
 
   return (
@@ -12,6 +12,7 @@ export default function NavListDrawer(navLinks) {
             <DrawerListItem
               key={link.title}
               item={link}
+              setOpen={setOpen}
             />
           ))}
         </List>

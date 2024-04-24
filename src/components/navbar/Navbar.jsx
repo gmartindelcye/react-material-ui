@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import NavListDrawer from "./NavListDrawer";
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar(navArrayLinks) {
   const [open, setOpen] = useState(false);
@@ -42,7 +43,8 @@ export default function Navbar(navArrayLinks) {
                 <Button
                   key={link.title}
                   color="inherit"
-                  href={link.path}
+                  component={NavLink}
+                  to={link.path}
                   sx={{
                     "&.MuiButton-root": {
                       color: link.active ? "primary" : "inherit",
@@ -64,7 +66,10 @@ export default function Navbar(navArrayLinks) {
         onClose={() => setOpen(false)}
         sx={{ display: { xs: "flex", sm: "none" } }}
       >
-        <NavListDrawer navLinks={navLinks} />
+        <NavListDrawer
+          navLinks={navLinks}
+          setOpen={setOpen}
+        />
       </Drawer>
     </>
   );
