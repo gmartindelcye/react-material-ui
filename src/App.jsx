@@ -32,7 +32,7 @@ const navArrayLinks = [
   {
     title: "Register",
     path: "/register",
-    active: false,
+    active: true,
     icon: <AppRegistrationIcon />,
   },
 ];
